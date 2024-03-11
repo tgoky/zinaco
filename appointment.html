@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zinaco - Book Appointment</title>
+
+    <!-- Add your CSS styles or link to external stylesheets here -->
+
+    <style>
+        /* Add your custom styles for the form here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-image: url('./zin2.png'); background-size: cover; background-repeat: no-repeat; background-position: center center; margin: 0;"></body>
+
+    <div class="container">
+        <h2>Book Appointment</h2>
+        <form action="submit_appointment.php" method="post" id="appointmentForm">
+            <label for="fname">Applicant First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Applicant Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+
+            
+            <label for="address">Residency Address</label>
+            <input type="address" id="address" name="address" required>
+
+            <label for ="glasses">Uses Glasses to Drive?</label>
+            <input type="glasses" id="glasses" name="glasses" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sessions">Intended Driving Sessions</label>
+            <select id="sessions" name="sessions" required>
+                <option value="morning-session">Morning Session</option>
+                <option value="evening-session">Evening Session</option>
+                </select>
+            </br>
+        </br>
+            
+
+            <!-- Add more fields as needed -->
+
+            <button type="submit">Submit Appointment</button>
+        </form>
+    </div>
+
+    <!-- Add your scripts here if needed -->
+
+</body>
+
+</html>
